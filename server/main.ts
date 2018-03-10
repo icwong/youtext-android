@@ -6,7 +6,7 @@ import { MessageType, Picture } from '../imports/models';
 Meteor.startup(() => {
   if (Meteor.settings) {
     Object.assign(Accounts._options, Meteor.settings['accounts-phone']);
-    SMS.twilio = {FROM: '+17788959787', ACCOUNT_SID: 'AC26e87c9a2c5743fa2828f73e56741ac1', AUTH_TOKEN: '268fc834cb3b66e54d74f18605d694ec'};;
+    SMS.twilio = {FROM: '+16042451558', ACCOUNT_SID: 'AC26e87c9a2c5743fa2828f73e56741ac1', AUTH_TOKEN: '268fc834cb3b66e54d74f18605d694ec'};;
   }
 
   if (Users.collection.find().count() > 0) {
