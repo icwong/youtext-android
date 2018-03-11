@@ -1,6 +1,7 @@
 import 'zone.js';
 import 'reflect-metadata';
 
+import {enableProdMode} from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { MeteorObservable } from 'meteor-rxjs';
 import { Meteor } from 'meteor/meteor';
@@ -13,6 +14,7 @@ Meteor.startup(() => {
     }
 
     setTimeout(() => subscription.unsubscribe());
+    enableProdMode();
     platformBrowserDynamic().bootstrapModule(AppModule);
   });
 });
