@@ -36,7 +36,7 @@ import { MyApp } from './app.component';
     IonicModule.forRoot(MyApp),
     MomentModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAWoBdZHCNh5R-hB5S5ZZ2oeoYyfdDgniA'
+      apiKey: 'AIzaSyCyv1kP-8UBm5KBp491VrwPqqi5UPqz2j0'
     })
   ],
   bootstrap: [IonicApp],
